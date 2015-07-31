@@ -1,4 +1,4 @@
-#Controlling nodebots with the web
+#nodebot with express and spark-io
 
 An example [express](http://expressjs.com/ "express") app that allows you to toggle an LED on your
 Spark [Photon](https://store.particle.io/ "Get a Photon!") board via a button on a web page.  
