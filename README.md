@@ -40,4 +40,7 @@ Run the example:
 
 Visit [localhost:3000](http://localhost:3000).
 
+![alt tag](https://github.com/chrisbuttery/nodebot-with-express-and-spark-io/blob/master/web.png)
+
+
 Now your robot will be instructed **kill all humans**.
