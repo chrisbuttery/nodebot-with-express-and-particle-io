@@ -41,4 +41,6 @@ Run the example:
 % babel-node index.js
 ```
 
+Visit [localhost:3000](localhost:3000).
+
 Now your robot will be instructed **kill all humans**.
