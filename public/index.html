@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Controlling nodebots with the web</title>
+  </head>
+  <body>
+    <h1>I AM NODEBOT</h1>
+    <button class="btn">Toggle LED</button>
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script>
+      //  Initialise socket.io on the client side
+      var socket = io();
+
+      // cache reference to our `trigger` and `triggered` value
+      var trigger = document.querySelector('.btn');
+      var triggered = false;
+
+      // and an event listener to emit a `toggle` event along with a value
+      // on click. This will be caught by the server
+      trigger.addEventListener('click', function(){
+        socket.emit('toggle', (triggered ? 0 : 1));
+        triggered = !triggered;
+      });
+    </script>
+  </body>
+</html>
