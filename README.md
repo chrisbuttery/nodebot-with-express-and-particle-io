@@ -3,7 +3,7 @@
 An example [express](http://expressjs.com/ "express") app that allows you to toggle an LED on your
 Spark [Photon](https://store.particle.io/ "Get a Photon!") board via a button on a web page.  
 
-![alt tag](https://github.com/chrisbuttery/controlling-nodebots-with-the-web/blob/master/photon.png)
+![alt tag](https://github.com/chrisbuttery/nodebot-with-express-and-spark-io/blob/master/photon.png)
 
 We use [express](http://expressjs.com/ "express") to create a server and render our web page. We
 then use [socket.io](http://socket.io/ "socket.io") to listen for connections and an event on click
@@ -22,17 +22,23 @@ It is also recommended that you [store your Spark token/device ID in a dot file]
 
 ##Usage
 
-Because I'm a slave to ES6 and io.js, you'll need to make sure you have
+Install the dependencies:
+
+```
+% npm install
+```
+
+Because I'm a slave to ES6, you'll need to make sure you have
 babel installed:
 
 ```
-npm install -g babel
+% npm install -g babel
 ```
 
 Run the example:
 
 ```
-babel-node index.js
+% babel-node index.js
 ```
 
 Now your robot will be instructed **kill all humans**.
