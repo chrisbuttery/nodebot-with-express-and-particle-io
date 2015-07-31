@@ -3,7 +3,7 @@
 An example [express](http://expressjs.com/ "express") app that allows you to toggle an LED on your
 Spark [Photon](https://store.particle.io/ "Get a Photon!") board via a button on a web page.  
 
-![alt tag](https://github.com/chrisbuttery/nodebot-with-express-and-spark-io/blob/master/photon.png)
+![alt tag](https://github.com/chrisbuttery/nodebot-with-express-and-spark-io/blob/master/photon.gif)
 
 We use [express](http://expressjs.com/ "express") to create a server and render our web page. We
 then use [socket.io](http://socket.io/ "socket.io") to listen for connections and an event on click
