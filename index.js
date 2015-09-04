@@ -1,5 +1,5 @@
 import five from 'johnny-five'
-import Spark from 'spark-io'
+import Particle from 'particle-io'
 import express from 'express'
 import socketio from 'socket.io'
 
@@ -27,17 +27,21 @@ const server = app.listen(3000, () => {
 server.listen(app.get('port'))
 
 /**
- * Set up our Spark board
- * Assign our Spark token and device ID to the board
- * Specific the port our device is plugged into.
+ * Set up our Particle board
+ * Assign our Particle token and device ID to the board
  *
- * Spark will usually do this automatically, but we can insist
+ * Optional:
+ * Specific the port our device is plugged into:
+ * port: process.argv[2]
+ *
+ * Particle will usually do this automatically, but we can insist
+ * % babel-node index.js /dev/cu.usbmodem1421
  */
 
 const board = new five.Board({
-  io: new Spark({
-    token: process.env.SPARK_TOKEN,
-    deviceId: process.env.SPARK_DEVICE_ID_2
+  io: new Particle({
+    token: process.env.PARTICLE_TOKEN,
+    deviceId: process.env.PARTICLE_DEVICE
   })
 })
 
