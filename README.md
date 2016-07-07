@@ -1,6 +1,6 @@
 #nodebot with express and particle-io
 
-An example [express](http://expressjs.com/ "express") app that allows you to toggle an LED on your
+A proof of concept [express](http://expressjs.com/ "express") application allowing you to toggle a LED on your
 Particle [Photon](https://store.particle.io/ "Get a Photon!") board via a button on a web page.  
 
 ![alt tag](https://github.com/chrisbuttery/nodebot-with-express-and-particle-io/blob/master/photon.gif)
